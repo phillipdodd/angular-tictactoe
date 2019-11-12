@@ -1,0 +1,17 @@
+<div class='board'>
+    <div class='row' id='row1'>
+        <app-square [isGameOver]="isGameOver" [turn]='turn' [squareIndex]="0" (valueEvent)='setSquareValue($event)'></app-square>
+        <app-square [isGameOver]="isGameOver" [turn]='turn' [squareIndex]="1" (valueEvent)='setSquareValue($event)'></app-square>
+        <app-square [isGameOver]="isGameOver" [turn]='turn' [squareIndex]="2" (valueEvent)='setSquareValue($event)'></app-square>
+    </div>
+    <div class='row' id='row2'>
+        <app-square [isGameOver]="isGameOver" [turn]='turn' [squareIndex]="3" (valueEvent)='setSquareValue($event)'></app-square>
+        <app-square [isGameOver]="isGameOver" [turn]='turn' [squareIndex]="4" (valueEvent)='setSquareValue($event)'></app-square>
+        <app-square [isGameOver]="isGameOver" [turn]='turn' [squareIndex]="5" (valueEvent)='setSquareValue($event)'></app-square>
+    </div>
+    <div class='row' id='row3'>
+        <app-square [isGameOver]="isGameOver" [turn]='turn' [squareIndex]="6" (valueEvent)='setSquareValue($event)'></app-square>
+        <app-square [isGameOver]="isGameOver" [turn]='turn' [squareIndex]="7" (valueEvent)='setSquareValue($event)'></app-square>
+        <app-square [isGameOver]="isGameOver" [turn]='turn' [squareIndex]="8" (valueEvent)='setSquareValue($event)'></app-square>
+    </div>
+</div>

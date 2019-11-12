@@ -1,0 +1,10 @@
+<div *ngIf="gameWinner">
+    <p>{{gameWinner}} has won the game!</p>
+</div>
+<div *ngIf="!gameWinner">
+    <p>Next player's turn: {{this.turn}}</p>
+</div>
+<app-board [turn]='turn' [isGameOver]="isGameOver" (squareClicked)='changeTurn()' (gameWon)="handleGameWin($event)"></app-board>
+<div *ngIf="gameWinner" class="playagain">
+    <a href="/"><button>Play Again</button></a>
+</div>
